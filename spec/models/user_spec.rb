@@ -22,19 +22,21 @@ describe User do
   describe 'validation' do
     describe 'nickname属性' do
       describe '文字数制限の検証' do
-        context 'if the nickname is less than 20 characters'
-        let(:nickname) { 'あいうえおかきくけこさしすせそたちつてと' } 
-        it 'User Object is valid' do
-          expect(user.valid?).to be(true)
+        context 'if the nickname is less than 20 characters' do
+          let(:nickname) { 'あいうえおかきくけこさしすせそたちつてと' } 
+          it 'User Object is valid' do
+            expect(user.valid?).to be(true)
+          end
         end
         
-        context 'if the nickname is more than 20 characters'
-        let(:nickname) { 'あいうえおかきくけこさしすせそたちつてとな' } 
-        it 'User object is invalid' do
-          user.valid?
-          
-          expect(user.valid?).to be(false)
-          expect(user.errors[:nickname]).to include('is too long (maximum is 20 characters)')
+        context 'if the nickname is more than 20 characters' do
+          let(:nickname) { 'あいうえおかきくけこさしすせそたちつてとな' } 
+          it 'User object is invalid' do
+            user.valid?
+            
+            expect(user.valid?).to be(false)
+            expect(user.errors[:nickname]).to include('is too long (maximum is 20 characters)')
+          end
         end
       end
     end

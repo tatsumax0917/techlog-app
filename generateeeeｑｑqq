@@ -1,0 +1,41 @@
+[33mcommit 05f83b7bc58976fdaa141a00de302f22ca46159a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: tatsumax <tatsumax.development@gmail.com>
+Date:   Mon Jan 8 14:22:32 2024 +0000
+
+    テスト結果の出力調整までOK
+
+[33mcommit 9e906199c7142c713e417fd28cf99e30019708b9[m
+Author: tatsumax <tatsumax.development@gmail.com>
+Date:   Mon Jan 8 14:01:38 2024 +0000
+
+    rails generateeee
+
+[33mcommit 91349e4ccd3ebcd18bd949a0a7c532ef18647cdf[m
+Author: tatsumax <tatsumax.development@gmail.com>
+Date:   Mon Jan 8 13:55:44 2024 +0000
+
+    Rubocopによる自動修正
+
+[33mcommit dc81f43206992b73af286e5f0a8596b5084491bf[m
+Author: tatsumax <tatsumax.development@gmail.com>
+Date:   Mon Jan 8 13:50:07 2024 +0000
+
+    Rubocop initialize done
+
+[33mcommit 077f435a110bc9c57bb15eea5c73d6a63e6fd76b[m
+Author: tatsumax <tatsumax.development@gmail.com>
+Date:   Mon Jan 8 13:39:18 2024 +0000
+
+    project start
+
+[33mcommit c2c700cb7a1b223e10afbe970aded713f4837db3[m
+Author: tatsumax <tatsumax.development@gmail.com>
+Date:   Mon Jan 8 13:30:38 2024 +0000
+
+    save
+
+[33mcommit e84b5221eb1ac4ff26b34875ad7117b30bc90ee7[m
+Author: tatsumax <tatsumax.development@gmail.com>
+Date:   Mon Jan 8 13:26:00 2024 +0000
+
+    Initialize

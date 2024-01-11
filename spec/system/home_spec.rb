@@ -28,6 +28,10 @@ RSpec.describe 'Home', type: :system do
         expect(page).to have_link('ログイン', href: '/users/sign_in')
       end
       
+      it 'ログ投稿リンクを表示しない' do
+        expect(page).not_to have_link('ログ投稿', href: '/posts/new')
+      end
+      
       it 'ログアウトリンクは表示しない' do
         expect(page).not_to have_content('ログアウト')
       end
@@ -38,6 +42,10 @@ RSpec.describe 'Home', type: :system do
         user = create(:user)
         sign_in user
         visit '/'
+      end
+      
+      it 'ログ投稿リンクを表示する' do
+        expect(page).to have_link('ログ投稿', href: '/posts/new')
       end
       
       it 'ユーザー登録リンクは表示しない' do

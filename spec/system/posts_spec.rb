@@ -128,4 +128,35 @@ RSpec.describe 'Post', type: :system do
       end
     end
   end
+  
+  describe 'ナビゲーションバーの検証' do
+    context 'ログインしていない場合' do
+      before { visit '/' }
+      
+      it 'ログ一覧リンクを表示しない' do
+        expect(page).not_to have_link('ログ一覧', href: '/posts')
+      end
+      
+      it 'ログ投稿リンクを表示しない' do
+        expect(page).not_to have_link('ログ投稿', href: '/posts/new')
+      end
+      
+    end
+    
+    context 'ログインしている場合' do
+      before do
+        user = create(:user)
+        sign_in user
+        visit '/'
+      end
+      
+      it 'ログ一覧リンクを表示する' do
+        expect(page).to have_link('ログ一覧', href: '/posts')
+      end
+      
+      it 'ログ投稿リンクを表示する' do
+        expect(page).to have_link('ログ投稿', href: '/posts/new')
+      end
+    end
+  end
 end

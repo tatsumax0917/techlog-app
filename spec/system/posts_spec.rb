@@ -4,6 +4,7 @@ RSpec.describe 'Post', type: :system do
   before do 
     driven_by :selenium_chrome_headless
     @user = create(:user)
+    @post = create(:post)
   end
   
   before do
